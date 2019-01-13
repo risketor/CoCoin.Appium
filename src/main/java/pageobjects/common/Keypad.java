@@ -44,14 +44,14 @@ public class Keypad extends Core {
      */
     public void tapOnNumber(int n) {
         // make sure number is between 0 and 10
-        Assert.assertTrue(n>=0);
-        Assert.assertTrue(n<10);
+        Assert.assertTrue(n >= 0);
+        Assert.assertTrue(n < 10);
 
-        if(n==0){
+        if (n == 0) {
             driver.findElements(layout_buttons_list).get(10).click();
             System.out.println("Tapping on number: " + 0);
 
-        }else {
+        } else {
             driver.findElements(layout_buttons_list).get(n - 1).click();
             System.out.println("Tapping on number: " + n);
         }
@@ -60,7 +60,7 @@ public class Keypad extends Core {
     /**
      * Tap on delete button
      */
-    public void tapOnDelete(){
+    public void tapOnDelete() {
         driver.findElements(layout_buttons_list).get(9).click();
         System.out.println("Tapping on delete button.");
     }
@@ -68,7 +68,7 @@ public class Keypad extends Core {
     /**
      * Tap on accept button
      */
-    public void tapOnAccept(){
+    public void tapOnAccept() {
         driver.findElements(layout_buttons_list).get(11).click();
         System.out.println("Tapping on accept button.");
     }

@@ -15,7 +15,6 @@ public class MenuPage extends Core {
     private final By list_view_button = By.id("com.nightonke.cocoin:id/list_text");
     private final By report_view_button = By.id("com.nightonke.cocoin:id/report_text");
     private final By settings_view_button = By.id("com.nightonke.cocoin:id/settings_text");
-
     private final By menu_burger_button_pwdNotPassed = By.id("com.nightonke.cocoin:id/content_hamburger");
     private final By menu_burger_button_pwdPassed = By.className("android.widget.ImageButton");
 

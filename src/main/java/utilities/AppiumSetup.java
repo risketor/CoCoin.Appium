@@ -2,7 +2,6 @@ package utilities;
 
 import config.TestData;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.io.File;
 import java.net.MalformedURLException;
 

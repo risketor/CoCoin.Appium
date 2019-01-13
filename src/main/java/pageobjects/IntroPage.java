@@ -37,5 +37,6 @@ public class IntroPage extends Core {
         swipeRightToLeft();
         swipeRightToLeft();
         swipeRightToLeft();
+
     }
 }
