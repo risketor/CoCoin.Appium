@@ -1,5 +1,6 @@
 package utilities;
 
+import config.TestData;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -13,7 +14,7 @@ public class AppiumSetup {
      */
     public static void appiumSetup() throws MalformedURLException {
         File appDir = new File("app");
-        File app = new File(appDir, TestData.TestConfiguration.AppName);
+        File app = new File(appDir, "CoCoin.apk");
 
         // Create the driver with the capabilities
         DesiredCapabilities capabilities = new DesiredCapabilities();

@@ -1,5 +1,6 @@
 package utilities;
 
+import config.TestData;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -44,8 +45,6 @@ public class Core {
         driver.quit();
     }
 
-
-
     /**
      * Wait for visibility for the By element
      * @param element
@@ -62,9 +61,9 @@ public class Core {
         Dimension size = driver.manage().window().getSize();
         //Find swipe start and end point from screen's with and height.
         //Find startx point which is at right side of screen.
-        int startx = (int) (size.width * 0.90);
+        int startx = (int) (size.width * 0.95);
         //Find endx point which is at left side of screen.
-        int endx = (int) (size.width * 0.10);
+        int endx = (int) (size.width * 0.01);
         //Find vertical point where you wants to swipe. It is in middle of screen height.
         int starty = size.height / 3;
 
@@ -73,16 +72,16 @@ public class Core {
     }
 
     /**
-     * Swipe from Left to Right 95% to 5% width
+     * Swipe from Right to Left 90% to 5% width
      */
-    public void swipeLeftToRightOnElement(WebElement element)  {
+    public void swipeRightToLeftOnElement(WebElement element)  {
         Dimension size = driver.manage().window().getSize();
         //Find swipe start and end point from screen's with and height.
         //Find startx point which is at right side of screen.
         Point location = element.getLocation();
-        int startx = (int) (size.width * 0.01);
+        int startx = (int) (size.width * 0.9);
         //Find endx point which is at left side of screen.
-        int endx = (int) (size.width * .99);
+        int endx = (int) (size.width * 0.05);
         //Find vertical point where you wants to swipe. It is in middle of screen height.
         int starty = location.y;
         int endy = starty;
@@ -91,16 +90,76 @@ public class Core {
     }
 
     /**
-     * Swipe from Right to Left 95% to 5% width
+     * Swipe from Left to Right 10% to 95% width
      */
-    public void swipeRightToLeftOnElement(WebElement element)  {
+    public void swipeLeftToRightOnElement(WebElement element)  {
         Dimension size = driver.manage().window().getSize();
         //Find swipe start and end point from screen's with and height.
         //Find startx point which is at right side of screen.
         Point location = element.getLocation();
-        int startx = (int) (size.width * 0.95);
+        int startx = (int) (size.width * 0.5);
         //Find endx point which is at left side of screen.
-        int endx = (int) (size.width * 0.05);
+        int endx = (int) (size.width * 0.99);
+        //Find vertical point where you wants to swipe. It is in middle of screen height.
+        int starty = location.y;
+        int endy = starty;
+        //Swipe from Right to Left.
+        driver.swipe(startx, starty, endx, starty, endy);
+    }
+
+    public void swipeLeftToRightOnElement1(WebElement element)  {
+        Dimension size = driver.manage().window().getSize();
+        //Find swipe start and end point from screen's with and height.
+        //Find startx point which is at right side of screen.
+        Point location = element.getLocation();
+        int startx = (int) (size.width * 0.4);
+        //Find endx point which is at left side of screen.
+        int endx = (int) (size.width * 0.99);
+        //Find vertical point where you wants to swipe. It is in middle of screen height.
+        int starty = location.y;
+        int endy = starty;
+        //Swipe from Right to Left.
+        driver.swipe(startx, starty, endx, starty, endy);
+    }
+
+    public void swipeLeftToRightOnElement2(WebElement element)  {
+        Dimension size = driver.manage().window().getSize();
+        //Find swipe start and end point from screen's with and height.
+        //Find startx point which is at right side of screen.
+        Point location = element.getLocation();
+        int startx = (int) (size.width * 0.3);
+        //Find endx point which is at left side of screen.
+        int endx = (int) (size.width * 0.99);
+        //Find vertical point where you wants to swipe. It is in middle of screen height.
+        int starty = location.y;
+        int endy = starty;
+        //Swipe from Right to Left.
+        driver.swipe(startx, starty, endx, starty, endy);
+    }
+
+    public void swipeLeftToRightOnElement3(WebElement element)  {
+        Dimension size = driver.manage().window().getSize();
+        //Find swipe start and end point from screen's with and height.
+        //Find startx point which is at right side of screen.
+        Point location = element.getLocation();
+        int startx = (int) (size.width * 0.2);
+        //Find endx point which is at left side of screen.
+        int endx = (int) (size.width * 0.92);
+        //Find vertical point where you wants to swipe. It is in middle of screen height.
+        int starty = location.y;
+        int endy = starty;
+        //Swipe from Right to Left.
+        driver.swipe(startx, starty, endx, starty, endy);
+    }
+
+    public void swipeLeftToRightOnElement4(WebElement element)  {
+        Dimension size = driver.manage().window().getSize();
+        //Find swipe start and end point from screen's with and height.
+        //Find startx point which is at right side of screen.
+        Point location = element.getLocation();
+        int startx = (int) (size.width * 0.1);
+        //Find endx point which is at left side of screen.
+        int endx = (int) (size.width * 0.7);
         //Find vertical point where you wants to swipe. It is in middle of screen height.
         int starty = location.y;
         int endy = starty;

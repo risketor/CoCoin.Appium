@@ -1,4 +1,4 @@
-package utilities;
+package config;
 
 /**
  * Created by A.Bartolome 12/01/2019
@@ -9,7 +9,6 @@ public class TestData {
         // Time out in seconds
         public static final int Timeout = 20;
     }
-
 
     public class TestConfiguration {
         public static final String DeviceName = "AppiumDevice";

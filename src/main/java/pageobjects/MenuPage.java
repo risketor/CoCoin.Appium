@@ -20,14 +20,12 @@ public class MenuPage extends Core {
     private final By menu_burger_button_pwdPassed = By.className("android.widget.ImageButton");
 
 
+    /**
+     * Wait for couple of the buttons to make sure it is loaded
+     */
     public void waitToLoad() {
         waitForVisibility(custom_view_button);
         waitForVisibility(tag_view_button);
-        waitForVisibility(month_view_button);
-        waitForVisibility(list_view_button);
-        waitForVisibility(report_view_button);
-        waitForVisibility(settings_view_button);
-        waitForVisibility(profile_button);
 
         System.out.println("Menu Loaded");
     }

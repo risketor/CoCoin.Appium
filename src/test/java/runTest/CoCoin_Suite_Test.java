@@ -6,7 +6,7 @@ import pageobjects.*;
 import pageobjects.common.Keypad;
 import utilities.AppiumSetup;
 import utilities.Core;
-import utilities.TestData;
+import config.TestData;
 import java.net.MalformedURLException;
 
 
@@ -108,10 +108,22 @@ public class CoCoin_Suite_Test extends Core {
         System.out.println("Amounts are correct, for 0 position: " + TestData.NewEntry.AmountAllDigits);
         System.out.println("Amounts are correct, for 1 position: " + TestData.NewEntry.AmountAllDigits);
 
+        // Assert entry 1 is displayed.
+        Assert.assertTrue(listViewPage.checkEntryIsDisplayed(1));
+
         listViewPage.deleteEntry(1);
 
-        // Assert entry is null after deleting
-        Assert.assertTrue(listViewPage.checkEntryNotExist(1));
+        listViewPage.deleteEntry1(1);
+
+        listViewPage.deleteEntry2(1);
+
+        listViewPage.deleteEntry3(1);
+
+        listViewPage.deleteEntry4(1);
+
+
+        // Assert entry 1 is NOT displayed.
+        Assert.assertTrue(!listViewPage.checkEntryIsDisplayed(1));
     }
 
     /**
@@ -155,13 +167,14 @@ public class CoCoin_Suite_Test extends Core {
 
         System.out.println("Amounts are correct, for 0 position: " + TestData.NewEntry.AmountAllDigits);
 
+        // Swipe to edit the entry, and enter new value in the keypad
+        listViewPage.editEntry(0);
         keypad.tapOnNumber(6);
         keypad.tapOnNumber(6);
         keypad.tapOnAccept();
 
+        // Assert new value displayed in List View is the updated one.
         Assert.assertTrue(listViewPage.getAmountForEntry(0) == 66);
-
-
     }
 
     /**

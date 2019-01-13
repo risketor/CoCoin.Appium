@@ -29,14 +29,38 @@ public class ListViewPage extends Core {
         return Integer.parseInt(s);
     }
 
-    public boolean checkEntryNotExist(int i){
-        return driver.findElements(money_id).get(i)==null;
-
+    public boolean checkEntryIsDisplayed(int i){
+        return driver.findElements(money_id).get(i).isDisplayed();
     }
 
     public void deleteEntry(int i){
-
         swipeLeftToRightOnElement(driver.findElements(money_id).get(i));
+        System.out.println("Deleted entry: " + i);
+    }
 
+    public void editEntry(int i){
+        swipeRightToLeftOnElement(driver.findElements(money_id).get(i));
+        System.out.println("Editing entry: " + i);
+
+    }
+
+    public void deleteEntry1(int i){
+        swipeLeftToRightOnElement1(driver.findElements(money_id).get(i));
+        System.out.println("Deleted entry: " + i);
+    }
+
+    public void deleteEntry2(int i){
+        swipeLeftToRightOnElement2(driver.findElements(money_id).get(i));
+        System.out.println("Deleted entry: " + i);
+    }
+
+    public void deleteEntry3(int i){
+        swipeLeftToRightOnElement3(driver.findElements(money_id).get(i));
+        System.out.println("Deleted entry: " + i);
+    }
+
+    public void deleteEntry4(int i){
+        swipeLeftToRightOnElement4(driver.findElements(money_id).get(i));
+        System.out.println("Deleted entry: " + i);
     }
 }
