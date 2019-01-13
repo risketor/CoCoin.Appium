@@ -30,12 +30,12 @@ Automation framework based in Page Object Model using Appium to run few test cas
 * Eclipse IDE Version 2018.2
 
 ## Framework components
-**MAVEN This project is created as maven project. All the libraries required are maintained in "pom.xml" file as a dependencies. On importing as a Maven project it will donload all the dependencies.
-**Selenium and Appium. Selenium and and appium is been used for automating UI actions on mobile application.
-**Every page is a class and by creating object of page methods can be called while developing tests.
-**TestData, it is a file which maintains the test data needed for test cases and the configuration for running the tests.
-**Core, this is the base page of framework in which the UI operations methods are available (swipe, wait...) which can be called in creating other pages and the driver is created and kept.  
-**Pages, one class per page (Page Object Model) where all the actions with the elements of that page are located.
+- MAVEN This project is created as maven project. All the libraries required are maintained in "pom.xml" file as a dependencies. On importing as a Maven project it will donload all the dependencies.
+- Selenium and Appium. Selenium and and appium is been used for automating UI actions on mobile application.
+- Every page is a class and by creating object of page methods can be called while developing tests.
+- TestData, it is a file which maintains the test data needed for test cases and the configuration for running the tests.
+- Core, this is the base page of framework in which the UI operations methods are available (swipe, wait...) which can be called in creating other pages and the driver is created and kept.  
+- Pages, one class per page (Page Object Model) where all the actions with the elements of that page are located.
 
 ## Improvements
 Improvements to be done with more time:
