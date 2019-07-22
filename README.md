@@ -1,4 +1,4 @@
-#  CoCoin Android App - Appium Tests- REST Assured Test Suite for Best Buy API Playground 
+#  CoCoin Android App - Appium Tests- Test Suite for Best Buy API Playground 
 =======
 
 Test suite covering the Appium Tests for the CoCoin Android app. 
