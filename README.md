@@ -9,7 +9,7 @@ Automation framework based in Page Object Model using Appium to run few test cas
 ## Getting Started
 1. Open a terminal window/command prompt
 2. Clone this project.
-3. In exclipse or intellij IDE import as an existing maven project
+3. In eclipse or intellij IDE import as an existing maven project
 4. Rebuild
  
 ### Prerequisites
@@ -30,7 +30,7 @@ Automation framework based in Page Object Model using Appium to run few test cas
 * Eclipse IDE Version 2018.2
 
 ## Framework components
-- MAVEN This project is created as maven project. All the libraries required are maintained in "pom.xml" file as a dependencies. On importing as a Maven project it will donload all the dependencies.
+- MAVEN This project is created as maven project. All the libraries required are maintained in "pom.xml" file as a dependencies. On importing as a Maven project it will download all the dependencies.
 - Selenium and Appium. Selenium and and appium is been used for automating UI actions on mobile application.
 - Every page is a class and by creating object of page methods can be called while developing tests.
 - TestData, it is a file which maintains the test data needed for test cases and the configuration for running the tests.
